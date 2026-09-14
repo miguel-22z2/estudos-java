@@ -4,23 +4,23 @@ public class Recursao {
 	
 	public static void main(String[] args) {
 		
-		regressivaRecursiva(10);
+		regressiva(10);
 		
-		long fat = fat(5);
+		System.out.println();
 		
-		System.out.println(fat);
+		System.out.println(fat(5));
 		
 	}
 	
-	public static void regressivaRecursiva(int valor) {
+	public static void regressiva(int valor) {
 		
-		if (valor <= 0) {
+		if (valor < 0) {
 			return;
 		}
 		
 		System.out.println(valor);
 		
-		regressivaRecursiva(valor - 1);
+		regressiva(valor - 1);
 		
 	}
 	
