@@ -1,17 +1,22 @@
 package poo;
 
 public class Gato extends Animal {
+	
+	private String nome;
 
+	public Gato(String especie, String nome) {
+		super(especie);
+		this.nome = nome;
+	}
+	
 	@Override
 	public void comer() {
-		this.setNome("Apolo");
-		System.out.println("O gato " + this.getNome() + " está comendo");
+		System.out.println("O gato " + this.nome + " está comendo");
 	}
 	
 	@Override
 	public void beber() {
-		this.setNome("Apolo");
-		System.out.println("O gato " + this.getNome() + " está bebendo");
+		System.out.println("O gato " + this.nome + " está bebendo");
 	}
 	
 }

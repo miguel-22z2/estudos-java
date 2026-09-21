@@ -2,27 +2,23 @@ package poo;
 
 public class Animal {
 
-	private String nome;
 	private String especie;
-	
+
+	public Animal(String especie) {
+		super();
+		this.especie = especie;
+	}
+
 	public void comer() {
 		System.out.println("O animal está comendo...");
 	}
-	
+
 	public void beber() {
 		System.out.println("O animal está bebendo...");
 	}
-	
+
 	public void reproduzirSom() {
 		System.out.println("O animal tá fazendo som...");
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
 	}
 
 	public String getEspecie() {
